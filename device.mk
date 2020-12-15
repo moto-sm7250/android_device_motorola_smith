@@ -77,3 +77,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Touch
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/touch/input-port-associations.xml:$(TARGET_COPY_OUT_VENDOR)/etc/input-port-associations.xml
+
+# VNDK
+PRODUCT_PACKAGES += \
+    libcomparetf2_shim
