@@ -25,6 +25,16 @@ vendor/firmware/marley-dsp2-aov-frontend.wmfw
 vendor/firmware/marley-dsp2-aov-vrgain.bin
 vendor/firmware/marley-dsp3-aov-control.wmfw
 
+# Audio - Prebuilt
+vendor/lib/hw/audio.primary.lito.so:vendor/lib/hw/audio.primary.lito-moto.so;FIX_SONAME
+vendor/lib/libmotaudioutils.so
+vendor/lib/libtinycompress_vendor.so
+vendor/lib/libunshorten.so
+
+# Audio - Soundfx
+vendor/lib/soundfx/libmmieffectswrapper.so
+vendor/lib/soundfx/libspeakerbundle.so
+
 # Camera (VL53l1)
 vendor/bin/vl53l1_daemon
 vendor/lib64/libvl53l1_daemon.so

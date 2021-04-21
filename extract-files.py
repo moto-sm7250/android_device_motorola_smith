@@ -24,6 +24,11 @@ namespace_imports = [
 blob_fixups: blob_fixups_user_type = {
     'vendor/bin/charge_only_mode': blob_fixup()
         .add_needed('libmemset_shim.so'),
+    'vendor/lib/hw/audio.primary.lito-moto.so': blob_fixup()
+        .replace_needed('android.hardware.power-V1-ndk_platform.so', 'android.hardware.power-V1-ndk.so')
+        .replace_needed('libtinyalsa.so', 'libtinyalsa-moto.so'),
+    ('vendor/lib/soundfx/libmmieffectswrapper.so', 'vendor/lib/soundfx/libspeakerbundle.so'): blob_fixup()
+        .replace_needed('libtinyalsa.so', 'libtinyalsa-moto.so'),
     ('vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so', 'vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so'): blob_fixup()
         .replace_needed('libtinyalsa.so', 'libtinyalsa-moto.so'),
     'vendor/lib64/libvidhance.so': blob_fixup()
