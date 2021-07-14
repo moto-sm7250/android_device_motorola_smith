@@ -6,10 +6,6 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.physical.num=4
 
-# Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.fingerprint=goodix
-
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.fm.use_audio_session=true
