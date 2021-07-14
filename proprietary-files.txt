@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from smith QPD30.114-80
+# All unpinned blobs below are extracted from smith QPSS30.205-Q3-43-75-4-2
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -11,14 +11,14 @@ vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Audio amplifier firmware
-vendor/firmware/cs35l41-dsp1-rcv-cali.bin
-vendor/firmware/cs35l41-dsp1-rcv-prot.bin
 vendor/firmware/cs35l41-dsp1-spk-cali.bin
 vendor/firmware/cs35l41-dsp1-spk-diag.wmfw
 vendor/firmware/cs35l41-dsp1-spk-prot.bin
 vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
-vendor/firmware/fast_switch1.txt
-vendor/firmware/fast_switch2.txt
+vendor/firmware/fast_switch_music.txt
+vendor/firmware/fast_switch_ringtone.txt
+vendor/firmware/fast_switch_sonification.txt
+vendor/firmware/fast_switch_voice.txt
 vendor/firmware/marley-dsp1-ultrasound.bin
 vendor/firmware/marley-dsp1-ultrasound.wmfw
 vendor/firmware/marley-dsp2-aov-frontend.wmfw
@@ -31,71 +31,32 @@ vendor/lib64/libvl53l1_daemon.so
 vendor/lib64/sensors.tof.vl53l1.so
 
 # Camera
-vendor/etc/camera/aec_golden_tele.bin
-vendor/etc/camera/aec_golden_wide.bin
-vendor/etc/camera/arcsoft_calibration_u_dc.bin
-vendor/etc/camera/dual_golden_tele.bin
-vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/vidhance_calibration
-vendor/lib64/camera/components/com.arcsoft.node.dc_capture.so
-vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so
-vendor/lib64/camera/com.mot.eeprom.mot_dw9763_ov8856_eeprom.so
-vendor/lib64/camera/com.mot.eeprom.mot_dw9767_ov16a10_eeprom.so
-vendor/lib64/camera/com.mot.eeprom.mot_gt9767_s5kgw1_eeprom.so
-vendor/lib64/camera/com.mot.eeprom.mot_s5k2x5sp_eeprom.so
-vendor/lib64/camera/com.qti.sensormodule.ofilm_mot_ov16a10.bin
-vendor/lib64/camera/com.qti.sensormodule.ofilm_mot_ov8856.bin
-vendor/lib64/camera/com.qti.sensormodule.ofilm_mot_s5k2x5sp.bin
-vendor/lib64/camera/com.qti.sensormodule.ofilm_mot_s5kgw1.bin
-vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
-vendor/lib64/camera/com.qti.sensor.mot_ov16a10.so
-vendor/lib64/camera/com.qti.sensor.mot_ov8856.so
-vendor/lib64/camera/com.qti.sensor.mot_s5k2x5sp.so
-vendor/lib64/camera/com.qti.sensor.mot_s5kgw1.so
-vendor/lib64/camera/com.qti.tuned.mot_ov16a10.bin
-vendor/lib64/camera/com.qti.tuned.mot_ov8856.bin
-vendor/lib64/camera/com.qti.tuned.mot_s5k2x5.bin
-vendor/lib64/camera/com.qti.tuned.mot_s5kgw1.bin
-vendor/lib64/libarcsoft_dualcam_refocus_image.so
-vendor/lib64/libarcsoft_portrait_distortion_correction.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libtriplecam_image_optical_zoom.so
-vendor/lib64/libtriplecam_optical_zoom_control.so
-vendor/lib64/libtriplecam_video_optical_zoom.so
+vendor/lib64/camera/com.mot.eeprom.mot_cat24c64_s5kgm1sp_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_s5k3t2sp_eeprom.so
+vendor/lib64/camera/com.qti.sensormodule.semco_mot_s5kgm1sp.bin
+vendor/lib64/camera/com.qti.sensormodule.semco_mot_s5kgm1sp_cli.bin
+vendor/lib64/camera/com.qti.sensormodule.sunny_mot_sk53t2sp.bin
+vendor/lib64/camera/com.qti.sensor.mot_s5k3t2sp.so
+vendor/lib64/camera/com.qti.sensor.mot_s5kgm1sp_cli.so
+vendor/lib64/camera/com.qti.sensor.mot_s5kgm1sp.so
+vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/com.qti.tuned.mot_s5k3t2sp.bin
+vendor/lib64/camera/com.qti.tuned.mot_s5kgm1sp.bin
+vendor/lib64/camera/com.qti.tuned.mot_s5kgm1sp_cli.bin
 
 # Charger
 vendor/bin/charge_only_mode
 
-# Display (HDR)
-vendor/etc/hdr_tm_config.xml
-
 # Display (Calibration Data)
-vendor/etc/qdcm_calib_data_mipi_mot_cmd_boe_1080p_667.xml
-vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_667.xml
-vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_667.xml
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_boe_800x600_269.xml
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_boe_876x2142_620.xml
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_876x2142_620.xml
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
-vendor/etc/vintf/manifest/com.motorola.hardware.biometric.fingerprint@1.0-service.xml
-vendor/etc/vintf/manifest/vendor.goodix.hardware.biometrics.fingerprint@2.1-service.xml
-vendor/lib64/hw/fingerprint.goodix.so
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc.rc
 vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so
-
-# Fingerprint (Firmware)
-vendor/firmware/goodix_cfg_group2.bin
-vendor/firmware/goodix_cfg_group2_parker.bin
-vendor/firmware/goodix_cfg_group_boe_smithl.bin
-vendor/firmware/goodix-gtx5-38-04-foles.bin
-vendor/firmware/goodix-gtx5-40-04-parker.bin
-vendor/firmware/goodix-gtx8-01-14-smithl.bin
-vendor/firmware/goodix-GTx8-18-01-smith.bin
-
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleWM8280/HotwordEnrollmentOKGoogleWM8280.apk
--product/priv-app/HotwordEnrollmentXGoogleWM8280/HotwordEnrollmentXGoogleWM8280.apk
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.default.so
@@ -110,27 +71,32 @@ vendor/lib64/vndk/libtinyalsa.so
 vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
 vendor/lib64/motorola.hardware.audio.adspd@1.0.so
 
+# Motorola firmware
+vendor/firmware/mot_bu63169.coeff
+vendor/firmware/mot_bu63169.prog
+
 # NFC
-vendor/firmware/st21nfc_fw.bin
+vendor/firmware/st54j_fw.bin
 
 # OEM
 vendor/etc/vhw.xml
 
 # Sensors
-vendor/bin/capsense_reset
-vendor/bin/motpsd
+vendor/etc/sensors/config/ak991x_0.json
+vendor/etc/sensors/config/bmp380_0.json
 vendor/etc/sensors/config/default_sensors.json
-vendor/etc/sensors/config/icm4x6xx_0.json
-vendor/etc/sensors/config/lsm6ds3c_0.json
-vendor/etc/sensors/config/mmc5603x_0.json
+vendor/etc/sensors/config/lsm6dso_0_16g.json
+vendor/etc/sensors/config/lsm6dso_0.json
+vendor/etc/sensors/config/lsm6dso_1_16g.json
+vendor/etc/sensors/config/lsm6dso_1.json
 vendor/etc/sensors/config/mot_camgest.json
+vendor/etc/sensors/config/mot_chopchop_closed.json
 vendor/etc/sensors/config/mot_chopchop.json
 vendor/etc/sensors/config/mot_dsp_0.json
+vendor/etc/sensors/config/mot_flip_evt.json
+vendor/etc/sensors/config/mot_flip.json
 vendor/etc/sensors/config/mot_ltv.json
-vendor/etc/sensors/config/mot_vsync_boe_always.json
-vendor/etc/sensors/config/mot_vsync_csot_always.json
-vendor/etc/sensors/config/mot_vsync.json
-vendor/etc/sensors/config/mot_vsync_tianma_always.json
+vendor/etc/sensors/config/mot_offbody.json
 vendor/etc/sensors/config/power_0.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
@@ -145,75 +111,40 @@ vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
-vendor/etc/sensors/config/tcs3708_boe_always.json
-vendor/etc/sensors/config/tcs3708_boeB4_always.json
-vendor/etc/sensors/config/tcs3708_csot_always.json
-vendor/etc/sensors/config/tcs3708_csotB5_always.json
-vendor/etc/sensors/config/tcs3708.json
-vendor/etc/sensors/config/tcs3708_tianma_always.json
+vendor/etc/sensors/config/tmd2725_0_dvt1bc_dvt2.json
+vendor/etc/sensors/config/tmd2725_0.json
+vendor/etc/sensors/config/tmd2725_1.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
-vendor/lib64/sensors.dt.so
 vendor/lib64/sensors.rp.so
 vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.tof.so
 
 # Thermal
 vendor/etc/thermal-engine-smith.conf
 
 # Touchscreen firmware
-vendor/firmware/samsung-boe-se77c-20033021-17110105-smith.bin
-vendor/firmware/samsung-boe-se77c-20033021-17110305-smith-pvt.bin
-vendor/firmware/samsung-csot-se77c-20042009-17120108-smith.bin
-vendor/firmware/samsung-csot-se77c-20042009-17120308-smith-pvt.bin
-vendor/firmware/synaptics-tianma-s3908-20052606-313204-smith.tdat
+vendor/firmware/samsung-boe-se77c-19092701-17800202-smith.bin
+vendor/firmware/samsung-csot-se77c-19092706-17800602-smith.bin
+vendor/firmware/synaptics-s3601r-19031301-2765e0-smith.tdat
 
 # Vibrator firmware
-vendor/firmware/aw8695_haptic.bin
-vendor/firmware/aw8695_rtp_Argo_Navis.bin
-vendor/firmware/aw8695_rtp_Attentive.bin
-vendor/firmware/aw8695_rtp_Awake.bin
-vendor/firmware/aw8695_rtp.bin
-vendor/firmware/aw8695_rtp_Bird_Loop.bin
-vendor/firmware/aw8695_rtp_Brilliant_Times.bin
-vendor/firmware/aw8695_rtp_Chimey_Phone.bin
-vendor/firmware/aw8695_rtp_Complex.bin
-vendor/firmware/aw8695_rtp_Crazy_Dream.bin
-vendor/firmware/aw8695_rtp_Curve_Ball_Blend.bin
-vendor/firmware/aw8695_rtp_Digital_Phone.bin
-vendor/firmware/aw8695_rtp_Electrovision.bin
-vendor/firmware/aw8695_rtp_Ether_Shake.bin
-vendor/firmware/aw8695_rtp_Fateful_Words.bin
-vendor/firmware/aw8695_rtp_Flutey_Phone.bin
-vendor/firmware/aw8695_rtp_Future_Funk.bin
-vendor/firmware/aw8695_rtp_Future_Hi_Tech.bin
-vendor/firmware/aw8695_rtp_Girtab.bin
-vendor/firmware/aw8695_rtp_Hello.bin
-vendor/firmware/aw8695_rtp_Hexagon.bin
-vendor/firmware/aw8695_rtp_Hydra.bin
-vendor/firmware/aw8695_rtp_Insert_Coin.bin
-vendor/firmware/aw8695_rtp_Jumping_Dots.bin
-vendor/firmware/aw8695_rtp_Keys.bin
-vendor/firmware/aw8695_rtp_Loopy.bin
-vendor/firmware/aw8695_rtp_Loopy_Lounge.bin
-vendor/firmware/aw8695_rtp_Modular.bin
-vendor/firmware/aw8695_rtp_Momentum.bin
-vendor/firmware/aw8695_rtp_Morning.bin
-vendor/firmware/aw8695_rtp_Moto.bin
-vendor/firmware/aw8695_rtp_Natural.bin
-vendor/firmware/aw8695_rtp_New_Player.bin
-vendor/firmware/aw8695_rtp_Onward.bin
-vendor/firmware/aw8695_rtp_Organ_Dub.bin
-vendor/firmware/aw8695_rtp_Overclocked.bin
-vendor/firmware/aw8695_rtp_Pegasus.bin
-vendor/firmware/aw8695_rtp_Play.bin
-vendor/firmware/aw8695_rtp_Pyxis.bin
-vendor/firmware/aw8695_rtp_Regrade.bin
-vendor/firmware/aw8695_rtp_Scarabaeus.bin
-vendor/firmware/aw8695_rtp_Sceptrum.bin
-vendor/firmware/aw8695_rtp_Simple.bin
-vendor/firmware/aw8695_rtp_Solarium.bin
-vendor/firmware/aw8695_rtp_Sparse.bin
-vendor/firmware/aw8695_rtp_Terrabytes.bin
-vendor/firmware/aw8695_rtp_TJINGLE.bin
-vendor/firmware/aw8695_rtp_Verizon_Airwaves.bin
-vendor/firmware/aw8695_rtp_Zero_Hour.bin
+vendor/firmware/aw8697_haptic.bin
+vendor/firmware/aw8697_osc_rtp_24K_5s.bin
+vendor/firmware/aw8697_rtp_Attentive.bin
+vendor/firmware/aw8697_rtp.bin
+vendor/firmware/aw8697_rtp_Bird_Loop.bin
+vendor/firmware/aw8697_rtp_Crazy_Dream.bin
+vendor/firmware/aw8697_rtp_Curve_Ball_Blend.bin
+vendor/firmware/aw8697_rtp_Ether_Shake.bin
+vendor/firmware/aw8697_rtp_Hello.bin
+vendor/firmware/aw8697_rtp_lighthouse.bin
+vendor/firmware/aw8697_rtp_Momentum.bin
+vendor/firmware/aw8697_rtp_Moto.bin
+vendor/firmware/aw8697_rtp_Moto_Retro.bin
+vendor/firmware/aw8697_rtp_Natural.bin
+vendor/firmware/aw8697_rtp_Pyxis.bin
+vendor/firmware/aw8697_rtp_silk.bin
+vendor/firmware/aw8697_rtp_Simple.bin
+vendor/firmware/aw8697_rtp_Sparse.bin
+vendor/firmware/aw8697_rtp_Zero_Hour.bin
