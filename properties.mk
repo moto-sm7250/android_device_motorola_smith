@@ -2,10 +2,6 @@
 # Properties for smith
 #
 
-# FM
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.fm.use_audio_session=true
-
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.color_mode=9

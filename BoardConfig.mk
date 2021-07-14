@@ -21,10 +21,6 @@ DEVICE_PATH := device/motorola/smith
 # Display
 TARGET_SCREEN_DENSITY := 360
 
-# FM
-BOARD_HAVE_QCOM_FM := true
-BOARD_HAS_QCA_FM_SOC := "cherokee"
-
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/smith_defconfig
 
