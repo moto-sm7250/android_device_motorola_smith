@@ -31,6 +31,7 @@ TARGET_KERNEL_CONFIG := vendor/smith_defconfig
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
     snd-soc-aov-trigger.ko:aov_trigger.ko \
+    snd-soc-cs35l41-i2c.ko:cirrus_cs35l41-i2c.ko \
     snd-soc-cs35l41-spi.ko:cirrus_cs35l41-spi.ko \
     snd-soc-cs35l41.ko:cirrus_cs35l41.ko \
     snd-soc-cs47l35.ko:cirrus_cs47l35.ko \
