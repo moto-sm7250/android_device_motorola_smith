@@ -17,7 +17,7 @@
 $(call inherit-product, device/motorola/sm7250-common/common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/racer/racer-vendor.mk)
+$(call inherit-product, vendor/motorola/smith/smith-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk
@@ -40,7 +40,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.racer
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.smith
 
 # FM
 PRODUCT_PACKAGES += \

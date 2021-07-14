@@ -16,9 +16,9 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.racer",
-    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.racer.xml"],
-    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.racer.rc"],
+    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.smith",
+    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.smith.xml"],
+    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.smith.rc"],
     srcs: ["service.cpp", "FingerprintInscreen.cpp"],
     vendor: true,
     shared_libs: [
@@ -35,7 +35,7 @@ cc_binary {
 }
 
 cc_library_static {
-    name: "libfod_extension.racer",
+    name: "libfod_extension.smith",
     srcs: ["FodExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"

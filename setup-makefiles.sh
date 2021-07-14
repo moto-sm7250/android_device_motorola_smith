@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-export DEVICE=racer
+export DEVICE=smith
 export DEVICE_COMMON=sm7250-common
 export VENDOR=motorola
 
