@@ -38,8 +38,8 @@ on post-fs
 on post-fs-data
    # Load DLKM that can afford being loaded later
    setprop vendor.mmi_init.stage late
-   start vendor.mmi_modules
-   wait_for_prop init.svc.vendor.mmi_modules stopped
+   #start vendor.mmi_modules
+   #wait_for_prop init.svc.vendor.mmi_modules stopped
    setprop vendor.mmi_init.stage complete
 
    # Change permission for fingerprint sensor
