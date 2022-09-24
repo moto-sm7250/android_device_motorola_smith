@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.2-impl \
     libgui_vendor
 
 PRODUCT_COPY_FILES += \
