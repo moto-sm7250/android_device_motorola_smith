@@ -32,6 +32,8 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
 # Audio
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.2-impl
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
