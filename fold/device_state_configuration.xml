@@ -1,0 +1,26 @@
+<device-state-config>
+  <device-state>
+    <identifier>0</identifier>
+    <name>CLOSED_HALL</name>
+    <conditions>
+      <lid-switch>
+        <open>false</open>
+      </lid-switch>
+    </conditions>
+    <flags>
+      <flag>FLAG_APP_INACCESSIBLE</flag>
+    </flags>
+  </device-state>
+  <device-state>
+    <identifier>1</identifier>
+    <name>OPENED_HALL</name>
+    <conditions>
+      <lid-switch>
+        <open>true</open>
+      </lid-switch>
+    </conditions>
+    <flags>
+      <flag>FLAG_APP_INACCESSIBLE</flag>
+    </flags>
+  </device-state>
+</device-state-config>
