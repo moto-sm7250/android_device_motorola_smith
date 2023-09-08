@@ -200,8 +200,47 @@
          mirror the content of the default display. -->
     <bool name="config_localDisplaysMirrorContent">false</bool>
 
-    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
-         it causes the device to wake up.
-         The default is false. -->
-    <bool name="config_lidControlsSleep">true</bool>
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">false</bool>
+
+    <bool name="config_supportsConcurrentInternalDisplays">false</bool>
+
+    <string-array name="config_displayUniqueIdArray" translatable="false">
+        <item>"local:4630947043778501761"</item>
+        <item>"local:4630947043778501762"</item>
+    </string-array>
+
+    <!-- WindowsManager JetPack display features -->
+    <string name="config_display_features" translatable="false">fold-[0,1071,876,1071]</string>
+
+    <!-- Map of System DeviceState supplied by DeviceStateManager to WM Jetpack posture. Must be in
+         the format [System DeviceState]:[WM Jetpack Posture], for example: "0:1". -->
+    <array name="config_device_state_postures">
+        <item>0:1</item>
+        <item>1:3</item>
+    </array>
+
+    <!-- The device states (supplied by DeviceStateManager) that should be treated as open by the
+         device fold controller. Default is empty. -->
+    <integer-array name="config_openDeviceStates">
+        <item>1</item>
+    </integer-array>
+
+    <!-- The device states (supplied by DeviceStateManager) that should be treated as folded by the
+         display fold controller. Default is empty. -->
+    <integer-array name="config_foldedDeviceStates">
+        <item>0</item>
+    </integer-array>
+
+    <!-- When a device enters any of these states, it should be woken up. States are defined in
+         device_state_configuration.xml. -->
+    <integer-array name="config_deviceStatesOnWhichToWakeUp">
+        <item>1</item>
+    </integer-array>
+
+    <!-- When a device enters any of these states, it should go to sleep. States are defined in
+         device_state_configuration.xml. -->
+    <integer-array name="config_deviceStatesOnWhichToSleep">
+        <item>0</item>
+    </integer-array>
 </resources>
