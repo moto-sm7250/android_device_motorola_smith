@@ -22,7 +22,10 @@ DEVICE_PATH := device/motorola/smith
 TARGET_SCREEN_DENSITY := 360
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifests/manifest_smith.xml
+ODM_MANIFEST_SKUS += dn n
+ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifests/manifest_dn.xml
+ODM_MANIFEST_N_FILES  := $(DEVICE_PATH)/manifests/manifest_n.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/smith_defconfig
