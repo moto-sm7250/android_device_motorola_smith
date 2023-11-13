@@ -49,6 +49,30 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Copy to recovery
+BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
+    utags \
+    mmi_annotate \
+    mmi_info \
+    tzlog_dump \
+    bq27426_fg_mmi \
+    qpnp-power-on-mmi \
+    qpnp-smbcharger-mmi \
+    slg51000 \
+    exfat \
+    aw8697 \
+    sensors_class \
+    mmi_relay \
+    sx933x_sar \
+    touchscreen_mmi \
+    sec_mmi \
+    synaptics_mmi \
+    synaptics_dsx_fw_update \
+    synaptics_dsx_rmi_dev \
+    synaptics_dsx_test_reporting
+
+RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(subst _,-,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)))
+
 # Security
 VENDOR_SECURITY_PATCH := 2022-08-01
 
