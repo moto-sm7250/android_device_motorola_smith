@@ -71,7 +71,7 @@ BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
     synaptics_dsx_rmi_dev \
     synaptics_dsx_test_reporting
 
-RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(subst _,-,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)))
+RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD))
 
 # Security
 VENDOR_SECURITY_PATCH := 2022-08-01
