@@ -1,0 +1,37 @@
+# Audio
+persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Bluetooth_cal.acdb
+persist.vendor.audio.calfile1=/vendor/etc/acdbdata/General_cal.acdb
+persist.vendor.audio.calfile2=/vendor/etc/acdbdata/Global_cal.acdb
+persist.vendor.audio.calfile3=/vendor/etc/acdbdata/Handset_cal.acdb
+persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Hdmi_cal.acdb
+persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb
+persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
+
+# Bluetooth
+bluetooth.device.default_name=motorola razr 5g
+
+# Camera
+persist.vendor.camera.physical.num=2
+persist.vendor.camera.privapp.list=com.motorola.camera2,com.motorola.camera3
+
+# Firmware
+ro.vendor.hw.modem_version=.
+
+# Graphics
+persist.sys.sf.color_mode=9
+vendor.display.window_rect=102,0,102,0
+
+# Media
+media.recorder.show_manufacturer_and_model=true
+vendor.mm.en.sec.smoothstreaming=false
+vendor.mm.enable.qcom_parser=16777215
+
+# Recovery
+ro.recovery.ui.margin_height=102
+ro.recovery.ui.margin_width=102
+
+# Sensors
+ro.vendor.sensors.dual_als=1
+ro.vendor.sensors.mot_ltv=true
+persist.vendor.sensors.hal_trigger_ssr=false
+persist.vendor.sensors.odl.adsp=true
