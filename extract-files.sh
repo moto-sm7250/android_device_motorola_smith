@@ -34,5 +34,6 @@ set -e
 export DEVICE=smith
 export DEVICE_COMMON=sm7250-common
 export VENDOR=motorola
+export VENDOR_COMMON=${VENDOR}
 
-"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+"./../../${VENDOR_COMMON}/${DEVICE_COMMON}/extract-files.sh" "$@"
