@@ -39,9 +39,9 @@ TARGET_SCREEN_HEIGHT := 2142
 TARGET_SCREEN_WIDTH := 876
 
 # Build info
-BUILD_FINGERPRINT := "motorola/smith_retail/smith:10/QPSS30.205-Q3-43-75-4-2/b8354:user/release-keys"
+BUILD_FINGERPRINT := "motorola/smith_retail/smith:12/S2PS32.57-23-31/69268-82a27f:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=smith_retail \
-    PRIVATE_BUILD_DESC="smith_retail-user 10 QPSS30.205-Q3-43-75-4-2 b8354 release-keys"
+    PRIVATE_BUILD_DESC="smith_retail-user 12 S2PS32.57-23-31 69268-82a27f release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
