@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from smith RPSS31.Q1-40-34-15-1-4
+# All unpinned blobs below are extracted from smith_retail-user 12 S2PS32M.57-23-31 82a27f release-keys - RETUS variant.
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
