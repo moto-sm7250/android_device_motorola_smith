@@ -18,20 +18,20 @@ INSTALLED_KERNEL_TARGET := $(PRODUCT_OUT)/kernel
 recovery_uncompressed_ramdisk := $(PRODUCT_OUT)/ramdisk-recovery.cpio
 
 RECOVERY_KMOD_TARGETS := \
-    aw8697.ko \
-    exfat.ko \
     mmi_annotate.ko \
     mmi_info.ko \
+    exfat.ko \
+    aw8697.ko \
+    sensors_class.ko \
     mmi_relay.ko \
     sec_mmi.ko \
-    sensors_class.ko \
     touchscreen_mmi.ko
 
-INSTALLED_RECOVERY_KMOD_TARGETS := $(RECOVERY_KMOD_TARGETS:%=$(TARGET_RECOVERY_ROOT_OUT)/lib/modules/%)
+INSTALLED_RECOVERY_KMOD_TARGETS := $(RECOVERY_KMOD_TARGETS:%=$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib/modules/%)
 $(INSTALLED_RECOVERY_KMOD_TARGETS): $(INSTALLED_KERNEL_TARGET)
 	echo -e ${CL_GRN}"Copying kernel modules to recovery"${CL_RST}
 	@mkdir -p $(dir $@)
-	cp $(@F:%=$(TARGET_OUT_VENDOR)/lib/modules/%) $(TARGET_RECOVERY_ROOT_OUT)/lib/modules/
+	cp $(@F:%=$(TARGET_OUT_VENDOR)/lib/modules/%) $(TARGET_RECOVERY_ROOT_OUT)/vendor/lib/modules/
 
 RECOVERY_FIRMWARE_TARGETS := \
     aw8697_haptic.bin \
