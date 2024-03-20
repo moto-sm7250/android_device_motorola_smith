@@ -25,6 +25,12 @@ ro.vendor.hw.modem_version=.
 persist.sys.sf.color_mode=9
 vendor.display.window_rect=102,0,102,0
 
+# NFC/SIM
+persist.radio.multisim.config=dsds
+persist.vendor.st_nfc_ignore_modem_sim1=1
+persist.vendor.st_nfc_defaut_se=SIM2
+persist.vendor.st_nfc_sim_swap=1
+
 # Media
 media.recorder.show_manufacturer_and_model=true
 vendor.mm.en.sec.smoothstreaming=false

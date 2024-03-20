@@ -208,6 +208,8 @@ vendor/firmware/mot_bu63169.coeff
 vendor/firmware/mot_bu63169.prog
 
 # NFC
+vendor/bin/STFlashTool
+vendor/etc/init/hw/init.vendor.st21nfc.rc
 vendor/firmware/st54j_fw.bin
 
 # OEM
