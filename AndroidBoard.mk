@@ -18,6 +18,7 @@ INSTALLED_KERNEL_TARGET := $(PRODUCT_OUT)/kernel
 recovery_uncompressed_ramdisk := $(PRODUCT_OUT)/ramdisk-recovery.cpio
 
 RECOVERY_KMOD_TARGETS := \
+    aw8697.ko \
     exfat.ko \
     mmi_annotate.ko \
     mmi_info.ko \

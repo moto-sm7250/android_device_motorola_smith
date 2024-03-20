@@ -13,6 +13,7 @@
 # limitations under the License.
 
 on boot
+    insmod /lib/modules/aw8697.ko
     insmod /lib/modules/exfat.ko
     insmod /lib/modules/mmi_annotate.ko
     insmod /lib/modules/mmi_info.ko
