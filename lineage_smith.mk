@@ -28,7 +28,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_smith
 PRODUCT_DEVICE := smith
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Motorola razr 5G
+PRODUCT_MODEL := motorola razr 5G
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
