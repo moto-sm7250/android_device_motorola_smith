@@ -1,5 +1,10 @@
 # Cutout
 ro.support_hide_display_cutout=true
+
 # eSIM
 masterclear.allow_retain_esim_profiles_after_fdr=true
 esim.enable_esim_system_ui_by_default=true
+
+# Moto Properties
+ro.mot.build.customerid=retail
+ro.opa.device_model_id=motorola-smith
