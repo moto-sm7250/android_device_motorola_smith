@@ -21,7 +21,7 @@ function blob_fixup() {
         "${PATCHELF}" --set-soname libtinyalsa-moto.so "${2}"
         ;;
     # rename moto modified tinyalsa
-    vendor/lib/hw/audio.primary.lito.so | vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so | vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so)
+    vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so | vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so)
         "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa-moto.so "${2}"
         ;;
     # __lttf2 shim
