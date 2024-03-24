@@ -176,7 +176,6 @@ vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_876x2142_620.xml
 # eUICC
 product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
-product/app/EuiccPartnerApp/EuiccPartnerApp.apk
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
