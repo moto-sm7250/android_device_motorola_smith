@@ -16,8 +16,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_smith.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_smith-eng \
-    lineage_smith-user \
-    lineage_smith-userdebug
