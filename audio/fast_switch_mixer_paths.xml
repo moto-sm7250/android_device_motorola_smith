@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mixer>
+	<!-- These are the initial mixer settings -->
+	<ctl name="SPK Fast Use Case Switch Enable" value="0" />
+	<ctl name="SPK Fast Use Case Delta File" value="fast_switch_music.txt" />
+	<!-- standard mixer end-->
+
+	<path name="fast-switch-normal">
+		<ctl name="SPK Fast Use Case Delta File" value="fast_switch_music.txt" />
+		<ctl name="SPK Fast Use Case Switch Enable" value="1" />
+	</path>
+
+	<path name="fast-switch-voice">
+		<ctl name="SPK Fast Use Case Delta File" value="fast_switch_voice.txt" />
+		<ctl name="SPK Fast Use Case Switch Enable" value="1" />
+	</path>
+
+	<path name="fast-switch-ringtone">
+		<ctl name="SPK Fast Use Case Delta File" value="fast_switch_ringtone.txt" />
+		<ctl name="SPK Fast Use Case Switch Enable" value="1" />
+	</path>
+
+	<path name="fast-switch-sonification">
+		<ctl name="SPK Fast Use Case Delta File" value="fast_switch_sonification.txt" />
+		<ctl name="SPK Fast Use Case Switch Enable" value="1" />
+	</path>
+</mixer>
