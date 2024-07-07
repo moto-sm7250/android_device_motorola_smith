@@ -28,7 +28,6 @@ vendor.display.window_rect=102,0,102,0
 # Media
 media.recorder.show_manufacturer_and_model=true
 vendor.mm.en.sec.smoothstreaming=false
-vendor.mm.enable.qcom_parser=16777215
 
 # Recovery
 ro.recovery.ui.margin_height=102
