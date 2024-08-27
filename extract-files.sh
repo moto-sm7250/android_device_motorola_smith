@@ -8,27 +8,41 @@
 
 function blob_fixup() {
     case "${1}" in
-    # Patch configureRpcThreadpool
-    vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
-        "${SIGSCAN}" -p "CC 0A 00 94" -P "1F 20 03 D5" -f "${2}"
-        ;;
-    # memset shim
-    vendor/bin/charge_only_mode)
-        "${PATCHELF}" --print-needed "${2}" |grep -q libmemset_shim || "${PATCHELF}" --add-needed libmemset_shim.so "${2}"
-        ;;
-    # rename moto modified tinyalsa
-    vendor/lib/libtinyalsa-moto.so | vendor/lib64/libtinyalsa-moto.so)
-        "${PATCHELF}" --set-soname libtinyalsa-moto.so "${2}"
-        ;;
-    # rename moto modified tinyalsa
-    vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so | vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so)
-        "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa-moto.so "${2}"
-        ;;
-    # __lttf2 shim
-    vendor/lib64/libvidhance.so)
-        "${PATCHELF}" --print-needed "${2}" |grep -q libcomparetf2_shim || "${PATCHELF}" --add-needed libcomparetf2_shim.so "${2}"
-        ;;
+        # Patch configureRpcThreadpool
+        vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
+            [ "$2" = "" ] && return 0
+            "${SIGSCAN}" -p "CC 0A 00 94" -P "1F 20 03 D5" -f "${2}"
+            ;;
+        # memset shim
+        vendor/bin/charge_only_mode)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --print-needed "${2}" |grep -q libmemset_shim || "${PATCHELF}" --add-needed libmemset_shim.so "${2}"
+            ;;
+        # rename moto modified tinyalsa
+        vendor/lib/libtinyalsa-moto.so | vendor/lib64/libtinyalsa-moto.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --set-soname libtinyalsa-moto.so "${2}"
+            ;;
+        # rename moto modified tinyalsa
+        vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so | vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa-moto.so "${2}"
+            ;;
+        # __lttf2 shim
+        vendor/lib64/libvidhance.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --print-needed "${2}" |grep -q libcomparetf2_shim || "${PATCHELF}" --add-needed libcomparetf2_shim.so "${2}"
+            ;;
+        *)
+            return 1
+            ;;
     esac
+
+    return 0
+}
+
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
 }
 
 # If we're being sourced by the common script that we called,
