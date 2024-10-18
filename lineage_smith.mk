@@ -38,10 +38,13 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 TARGET_SCREEN_HEIGHT := 2142
 TARGET_SCREEN_WIDTH := 876
 
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
 # Build info
 BUILD_FINGERPRINT := "motorola/smith_retail/smith:12/S2PS32.57-23-31/69268-82a27f:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=smith_retail \
-    PRIVATE_BUILD_DESC="smith_retail-user 12 S2PS32.57-23-31 69268-82a27f release-keys"
+    BuildDesc="smith_retail-user 12 S2PS32.57-23-31 69268-82a27f release-keys" \
+    BuildFingerprint=motorola/smith_retail/smith:12/S2PS32.57-23-31/69268-82a27f:user/release-keys \
+    DeviceProduct=smith_retail
 
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
