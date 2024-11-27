@@ -26,6 +26,9 @@ ro.vendor.hw.modem_version=.
 persist.sys.sf.color_mode=9
 vendor.display.window_rect=102,0,102,0
 
+# Hotword
+persist.vendor.audio.okg_hotword_ext_dsp=true
+
 # Media
 media.recorder.show_manufacturer_and_model=true
 vendor.mm.en.sec.smoothstreaming=false

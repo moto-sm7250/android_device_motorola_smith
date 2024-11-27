@@ -1,2 +1,3 @@
 # Cutout
 ro.support_hide_display_cutout=true
+ro.opa.eligible_device=true
